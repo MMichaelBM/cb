@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('images/back.jpg');
+    background-size: cover;
+}
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+.flex {
+    display: flex;
+}
+.imglogo {
+    margin-left: 40px;
+}
+.imglogo:hover {
+        transform: scale(1.3);
+        transition: 2s
+        
+}
+/* estilo */
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header a {
+    color: brown;
+    text-decoration: none;
+    display: inline-block;
+}
+header a:hover {
+    color: black;
+    transform: scale(1.10);
+    transition: .3s;
+    
+}
+header nav ul {
+    list-style-type: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+header .btn-ctt  {
+
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: none;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+
+}
+.meunome {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .btn-ctt:hover {
+    box-shadow: none;
+    transition: 1s;
+
+}
+/* ESTILO DO TOPO */
+
+section.topodosite {
+    padding: 20px 4%;
+}
+section.topodosite .flex {
+    align-items: center;
+    justify-content: center;
+}
+.topodosite h1 {
+    color: brown;
+
+}
+.topodosite span {
+    color: darkgreen;
+}
+.topodosite .imgtopo img{
+    position: relative;
+    animation: flutua 2s ease-in-out infinite alternate;
+
+ 
+}
+
+@keyframes flutua {
+    0% {
+        top: 2%;
+    }
+    100% {
+        top:20px
+    }
+}
+/* estilos das redes */
+section.redes{
+    padding: 40px 4%;
+    display: flex;
+    align-items: center;
+    color: rgb(124, 124, 124);
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.redes .redesbox {
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+}
+.redes .redesbox i {
+    font-size: 60px;
+    color: rgb(102, 97, 97);
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4px;
+    padding: 5px;
+}
+.redes .redesbox a {
+    font-size: 25px;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: ;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.redes .redesbox i:hover {
+    filter: grayscale(0.5) blur(2px);
+    align-items: center;
+    text-align: center;
+    
+}
+.story {
+    text-align: center;
+    font-family: 'fixedsys' monospace;
+    color: rgb(0, 0, 0);
+    margin: 50px;
+    margin-top: auto;
+}
+@font-face {
+    font-family: 'Fixedsys';
+    src: url('font/fixedsys.ttf') format('truetype') }
+
+footer {
+        position: fixed; /* Fixando o rodapé na parte inferior da página */
+        bottom: 0;
+        width: 100%;
+        color: #0a0101;
+        text-align: center;
+        padding: 15px 0; }
+.formulario {
+    padding: 40px 4%;
+    display: flex;
+    color: rgb(124, 124, 124);
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+.formulario form{
+    color:rgb(102, 97, 97);
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+.formulario input{
+    font-size: 20px;
+    align-items: right;
+    background-color: rgb(196, 196, 184);
+
+}
+.formulario textarea{
+    background-color:  rgb(196, 196, 184);
+}
+/* Estilos CSS para a Seção de Trabalhos */
+#trabalhos {
+    text-align: center;
+    padding: 50px 0;
+    margin: 30px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item h3 {
+    margin-top: 10px;
+  }
+  .grid-item img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+    
+  }
+  
